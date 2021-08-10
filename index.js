@@ -16,7 +16,7 @@ for (const file of commandFiles) {
     options: commandfile.options
   })
 }
-once('ready', () => {
+client.once('ready', () => {
   console.log('Ready!');
   client.guilds.cache.get(config.guild)?.commands.set(data)
 });
