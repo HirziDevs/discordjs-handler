@@ -3,10 +3,6 @@ const { Client, Collection, Intents } = require('discord.js');
 const config = require('./config.json');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
 
-once('ready', () => {
-  console.log('Ready!');
-});
-
 client.commands = new Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const data = []
@@ -20,7 +16,10 @@ for (const file of commandFiles) {
     options: commandfile.options
   })
 }
-client.guilds.cache.get(config.guild)?.commands.set(data)
+once('ready', () => {
+  console.log('Ready!');
+  client.guilds.cache.get(config.guild)?.commands.set(data)
+});
 
 client.on('interactionCreate', async interaction => {
   if (!interaction.isCommand()) return;
