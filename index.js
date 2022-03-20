@@ -47,7 +47,6 @@ client.once('ready', async () => {
     await client.guilds.cache.get(config.guild)?.commands.set(data);
 
     // Set Slash Commands Permissions
-
     setTimeout(async () => {
         console.log('Updating Slash Commands permissions');
         const commandData = await client.guilds.cache.get(config.guild)?.commands.fetch();
