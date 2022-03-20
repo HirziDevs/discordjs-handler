@@ -1,0 +1,16 @@
+{
+  "name": "discordjs-13-handler",
+  "version": "1.0.0",
+  "description": "Simple discord.js v13 handler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HirziDevs",
+  "license": "ISC",
+  "dependencies": {
+    "discord-modals": "^1.3.2",
+    "discord.js": "^13.6.0",
+    "js-yaml": "^4.1.0"
+  }
+}
