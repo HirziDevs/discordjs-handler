@@ -1,5 +1,12 @@
-# discord bot token
-token: 'BOT TOKEN'
+# Discord Bot Token
+token: 'TOKEN'
 
-# discord guild id
-guild: 'GUILD ID'
+# Discord Bot Client ID
+clientId: 'CLIENT ID'
+
+# Discord Test Server ID
+# This is optional, if you leave it blank he bot will create global commands and not guild commands
+guildId: 'GUILD ID'
+
+# Console Logging Prefix
+prefix: 'TEMPLATE'
