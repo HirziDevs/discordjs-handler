@@ -1,5 +1,5 @@
-# DiscordJS v13 Handler
-Simple discord.js v13 handler
+# DiscordJS v14 Handler
+Simple discord.js v14 handler
 
 ## Installation
 - Make sure you are using `node.js v16.9.0` or higher
