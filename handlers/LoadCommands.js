@@ -23,7 +23,7 @@ module.exports = async function LoadCommand(client) {
             client.slashCommands.set(command.data.name, command);
         }
     }
-    const contextMenusPath = path.join(__dirname, '../ContextMenu');
+    const contextMenusPath = path.join(__dirname, '../ContextMenus');
     const contextMenuFiles = fs.readdirSync(contextMenusPath).filter(file => file.endsWith('.js'));
 
     if (contextMenuFiles.length > 0) {
