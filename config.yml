@@ -5,7 +5,7 @@ token: 'TOKEN'
 clientId: 'CLIENT ID'
 
 # Discord Test Server ID
-# This is optional, if you leave it blank he bot will create global commands and not guild commands
+# This is optional, if you leave it blank the bot will create global commands and not guild commands
 guildId: 'GUILD ID'
 
 # Console Logging Prefix
